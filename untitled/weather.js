@@ -19,7 +19,7 @@ window.addEventListener("load", () =>{
           longitude = position.coords.longitude;
           latitude = position.coords.latitude;
           let proxy = 'https://cors-anywhere.herokuapp.com/';
-          let api = `${proxy}https://api.darksky.net/forecast/4e5fc308fd2d82f77cf9bca92642b482/${longitude},${latitude}`;
+          let api = `${proxy}https://api.darksky.net/forecast/{YOUR API KEY}/${longitude},${latitude}`;
           let api2 = `http://api.timezonedb.com/v2.1/get-time-zone?key=VD5XRK6GDOGC&format=json&by=position&lat=${latitude}&lng=${longitude}`;
            window.setInterval(()=>{
                fetch(api2)
